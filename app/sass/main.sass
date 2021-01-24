@@ -180,6 +180,9 @@ textarea
   padding: 0
   transition: .3s ease
   cursor: pointer
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
 
 .btn
   height: 30px
@@ -341,10 +344,12 @@ main
 
 .about
   h2
+    color: #24262a
     font-size: 200px
   .box-text
     max-width: 492px
     width: 100%
+    color: #565656
   .subtitle
     margin: 0 0 30px
 
@@ -507,7 +512,7 @@ main
     top: 50%
     transform: translate(0,-50%)
   &:after
-    left: -5px
+    left: -10px
     top: 50%
     transform: translate(0,-50%)
 
@@ -640,6 +645,8 @@ main
 
 .slick-disabled
   opacity: 0
+  &:focus, &:hover
+    opacity: 0
 
 //advantages
 .advantages
@@ -654,9 +661,9 @@ main
   align-items: flex-start
   justify-content: center
   flex-direction: column
-  max-width: 570px
   width: 100%
   color: #383f48
+  padding: 0 100px 0 0
   h3
     font-size: 32px
     font-weight: 500
@@ -679,7 +686,8 @@ main
   .advantages-img
     margin: 0 -15px 0 0
   .advantages-box
-    margin: 0 0 0 auto
+    padding: 0 0 0 100px
+
 
 .technology-slider__img-one
   width: 714px
@@ -900,6 +908,8 @@ footer
   margin: 0 35px 0 auto
   li
     margin: 0 26px 0 0
+    &:last-child
+      margin: 0
     a
       width: 24px
       height: 24px
@@ -960,7 +970,7 @@ footer
       margin: 0
     a
       color: #7f8792
-      border-bottom: 0.5px solid #78797d
+      text-decoration: underline
       width: fit-content
       &:hover
         color: #fff
@@ -974,14 +984,22 @@ footer
 .form-wrapper
   width: 100%
   display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 25px 0
+
+.line-wrapper
+  width: 100%
+  display: flex
   align-items: center
   flex-wrap: wrap
   justify-content: space-between
-  margin: 25px 0 0
 
 .clarification
   font-size: 14px
   font-weight: 500
+  color: #7f8792
 
 .color-accent
   color: $accent
@@ -1006,6 +1024,28 @@ footer
 //.mobile-menu
 .mobile-menu, .navbar-toggler
   display: none
+
+.navbar-toggler
+  font-weight: 500
+
+.navbar-toggler-icon
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: space-between
+  margin: 0 0 0 10px
+  width: 32px
+  height: 16px
+  span
+    height: 2px
+    width: 100%
+    background: #24262a
+    transition: .3s ease
+    &:nth-child(2)
+      width: 28px
+  &:hover
+    span
+      background: $accent
 
 @import "media"
 // Всегда в конце
