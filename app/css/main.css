@@ -1400,6 +1400,9 @@ footer {
 .dropdown-toggle::after {
   display: none; }
 
+.mb-35 {
+  margin: 0 0 35px; }
+
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width: 1350px) {
   .technology-slider__img-one, .technology-slider__img-two {
@@ -1723,7 +1726,8 @@ footer {
     font-size: 200px; }
   .about-main-content {
     height: auto;
-    margin: 60px 0 0; }
+    margin: 60px 0 0;
+    padding: 0; }
   .about .box-text {
     max-width: none; }
   .about .subtitle {
@@ -1765,7 +1769,10 @@ footer {
   .buy {
     padding: 37px 0 0; }
     .buy .box-title {
-      margin: 0 auto 23px; }
+      margin: 0 auto 23px;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
   .buy-box {
     padding: 44px 30px 32px 21px; }
   .video-box-max {
@@ -1777,31 +1784,263 @@ footer {
     .reviews .box-title {
       margin: 0 0 36px; } }
 
-/* Extra Small Devices, Phones */
+@media only screen and (max-width: 670px) {
+  .buy h2 {
+    font-size: 40px; }
+  .buy .box-text {
+    margin: 0 auto 39px; }
+  .buy .subtitle {
+    margin: 0 0 20px; }
+  .buy-img {
+    width: 352px; }
+  .buy-box {
+    padding: 19px 14px 15px;
+    max-width: 228px;
+    margin: 0 0 0 auto; }
+    .buy-box h3 {
+      font-size: 16px; }
+    .buy-box .btn {
+      margin: 16px 0 21px;
+      max-width: 177px; } }
+
+@media only screen and (max-width: 650px) {
+  .footer-box-info {
+    padding: 0 17px 0 0;
+    max-width: 240px; }
+  .main-img {
+    min-width: 700px; }
+  header {
+    padding: 22px 0; }
+  .footer-menu {
+    width: calc(100% - 74px - 28px);
+    margin: 38px 0 0; }
+  .list-social {
+    margin: 38px auto 0 0; }
+  .footer-top .btn {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 0 0 auto; }
+  footer .logo {
+    margin: 0;
+    width: calc(100% - 120px);
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 590px) {
+  .navbar-toggler-text {
+    display: none; }
+  .navbar-toggler-icon {
+    margin: 0; }
+  .main-img {
+    min-width: 600px;
+    margin: 0 0 0 -40px; }
+  h1, .about h2 {
+    font-size: 180px; }
+  .about {
+    padding: 52px 0 45px; }
+    .about .subtitle {
+      font-size: 28px;
+      letter-spacing: 6.16px;
+      margin: 0 0 35px; }
+    .about .subtitle-text {
+      font-size: 28px;
+      max-width: 370px; }
+  .about-wrapper {
+    padding: 11px 0 0; }
+  .about-img {
+    margin: 0 auto 57px;
+    max-width: 463px; }
+  .technology-slider__box-two, .technology-slider__box-one {
+    width: 472px; }
+  .technology {
+    padding: 49px 0 30px; }
+  .list-technology {
+    margin: 0;
+    width: 100%;
+    font-size: 16px; }
+    .list-technology__line {
+      margin: 0 0 14px; }
+      .list-technology__line:last-child {
+        margin: 0 0 14px; }
+  .list-technology-num {
+    margin: 0 11px 0 0; }
+  .technology-slider-nav {
+    margin: 0 0 48px; }
+  .advantages {
+    padding: 39px 0 26px; }
+  .advantages-box {
+    margin: 0 0 24px; }
+    .advantages-box h3 {
+      margin: 0 0 20px; }
+  .list-checkbox {
+    font-size: 16px; }
+  .video-box-max {
+    height: 268px; }
+  .reviews {
+    padding: 58px 0 40px; }
+    .reviews .box-title {
+      margin: 0 0 40px; }
+  .reviews-item-info {
+    width: 100%;
+    margin: 36px 0 0 auto; }
+  .reviews .line-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer-box-document {
+    padding: 0; }
+  .footer-top {
+    padding: 24px 0 35px; }
+  .footer-menu li {
+    margin: 0 25px 0 0; }
+  .form-col-last {
+    width: 100%;
+    margin: 34px 0 0; }
+  .form .line-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .form button {
+    margin: 36px 0 0 auto; }
+  .footer-box-form {
+    margin: 0 0 76px; }
+  .label-form-input {
+    width: 100%; }
+  .form-col {
+    width: 100%; } }
+
+@media only screen and (max-width: 540px) {
+  .list-document {
+    max-width: 225px;
+    margin: 20px 0 0; }
+  .footer-box h4 {
+    font-size: 16px; }
+  .footer-box-info {
+    max-width: 222px;
+    font-size: 14px; } }
+
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .technology-slider__box-two, .technology-slider__box-one {
+    width: 300px; }
+  .num7 {
+    top: 80px;
+    right: 70px; }
+  .num6 {
+    left: 74px;
+    top: 80px; }
+  .num1 {
+    top: 70px; }
+  .num2 {
+    left: 40px;
+    bottom: 30px; }
+  .num3 {
+    bottom: 50px; }
+  .num4 {
+    top: 80px;
+    right: 60px; }
+  .num5 {
+    bottom: 30px;
+    right: 100px; }
+  .technology-slider {
+    margin: -20px auto 0; }
+  h2 {
+    font-size: 40px; }
+  .buy h2 {
+    font-size: 30px; }
+  .buy .subtitle {
+    margin: 0 0 10px;
+    font-size: 18px; }
+  .subtitle {
+    font-size: 20px; }
+  .list-document {
+    max-width: 170px; }
+  .footer-menu li {
+    margin: 0 20px 0 0; }
+    .footer-menu li a {
+      font-size: 14px; } }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+@media only screen and (max-width: 440px) {
+  .logo-name {
+    font-size: 26px; }
+  .logo-text {
+    font-size: 11px; }
+  header {
+    padding: 15px 0; }
+  .btn {
+    padding: 0 15px;
+    font-size: 14px;
+    height: 28px; }
+  .navbar-toggler {
+    width: 28px;
+    margin: 0 10px 0 auto; }
+  .navbar-toggler-icon span:nth-child(2) {
+    width: 20px; }
+  .main-img {
+    min-width: 500px; }
+  h1, .about h2 {
+    font-size: 100px; }
+  .about .subtitle-text, .about .subtitle {
+    font-size: 22px; }
+  h2 {
+    font-size: 30px; }
+  .buy-box h3 {
+    font-size: 14px; }
+  .list-checkbox {
+    font-size: 14px; }
+  .price {
+    margin: 20px 0 10px; }
+  .warranty {
+    font-size: 14px; }
+  .buy-img {
+    width: 250px; }
+  .buy h2 {
+    font-size: 24px; }
+  .buy .subtitle {
+    font-size: 16px; }
+  .price {
+    font-size: 26px; }
+  footer .logo-text {
+    font-size: 12px; }
+  footer .logo-name {
+    font-size: 30px; }
+  .list-social li {
+    margin: 0 15px 0 0; }
+  .footer-menu {
+    width: calc(100% - 80px); }
+    .footer-menu li {
+      margin: 0 15px 0 0; }
+      .footer-menu li a {
+        font-size: 12px; }
+  .phone {
+    font-size: 18px; }
+  .footer-box-info {
+    max-width: 210px; } }
 
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
+@media only screen and (max-width: 420px) {
+  .footer-box-info {
+    max-width: none;
+    padding: 0;
+    border: none;
+    margin: 0 0 30px; }
+  .footer-box-document {
+    margin: 0; }
+  .list-document {
+    max-width: none; } }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /**/ }
+@media only screen and (max-width: 360px) {
+  .buy-img {
+    width: 200px; }
+  .buy h2 {
+    font-size: 20px; }
+  .buy .subtitle {
+    font-size: 14px; } }
