@@ -417,6 +417,37 @@ main
   line-height: 1
   z-index: 1
 
+.list-technology
+  font-size: 16px
+  font-weight: 500
+  display: none
+  margin: 50px 0
+  width: 50%
+  &__line
+    display: flex
+    align-items: center
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+
+
+.list-technology-num
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  border-radius: 50%
+  border: 4px solid rgba($accent, .5)
+  background: rgba(#000, .7)
+  color: rgba(#fff, .7)
+  font-weight: 500
+  font-size: 12px
+  line-height: 1
+  width: 31px
+  min-width: 31px
+  height: 31px
+  margin: 0 25px 0 0
+
 .num1
   left: 40px
   top: 170px
@@ -792,13 +823,12 @@ main
 
 .video-box-max
   height: 523px
+  margin: 0 0 22px
   &:before
     background-color: rgba(36, 38, 42, 0.8)
 
 .video-box-description
   position: relative
-  width: 100%
-  margin: 22px 0 0
   font-size: 14px
   color: #7e8791
   h3
@@ -925,6 +955,8 @@ footer
     &:last-child
       margin: 0
     a
+      padding: 0
+      border: none
       &:hover
         color: #fff
 
@@ -1025,8 +1057,95 @@ footer
 .mobile-menu, .navbar-toggler
   display: none
 
+
+.mobile-menu
+  position: fixed
+  right: 0
+  top: 0
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.08)
+  background-color: #f9f9f9
+  max-width: 331px
+  width: 100%
+  z-index: 5
+  padding: 7px 0 0
+  overflow-y: auto
+  height: 100%
+  .navbar-nav
+    margin: 0
+  .nav-item
+    margin: 0
+  .nav-link
+    border: none
+    color: #24262a
+    font-size: 18px
+    font-weight: 500
+    text-decoration: underline
+    padding: 20px 18px
+  .dropdown-menu
+    padding: 0 30px 46px 40px
+    box-sizing: border-box
+    border: none
+    left: 0
+    top: 0
+    position: relative !important
+    transform: none !important
+    background: #f1efef
+    .dropdown-item
+      color: #7f8792
+      font-size: 16px
+      padding: 0
+      margin: 0 0 20px
+      text-decoration: underline
+      white-space: normal
+      &:last-child
+        margin: 0
+
+  .dropdown.show
+    background: #f1efef
+    .dropdown-toggle
+      text-decoration: none
+      font-weight: bold
+
+
+.btn-close
+  margin: 0 11px 56px auto
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.btn-close-icon
+  width: 15px
+  height: 15px
+  position: relative
+  margin: 0 0 0 12px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 7px
+    background: $accent
+    width: 1px
+    height: 100%
+    top: 0
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+
+.overlay
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(26, 27, 30, 0.93)
+  display: none
+  z-index: 3
+
 .navbar-toggler
   font-weight: 500
+  padding: 0
+  border: none
 
 .navbar-toggler-icon
   display: flex
@@ -1046,6 +1165,9 @@ footer
   &:hover
     span
       background: $accent
+
+.dropdown-toggle::after
+  display: none
 
 @import "media"
 // Всегда в конце

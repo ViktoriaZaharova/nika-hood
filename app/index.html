@@ -26,12 +26,38 @@
 
 <body>
 
-<div class="mobile-menu" id="navbarNav">
+<div class="mobile-menu">
   <div class="btn-close">
     Закрыть
+    <div class="btn-close-icon"></div>
   </div>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link go_to" href="#reviews">Отзывы</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link go_to" href="#question">Вопросы</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link go_to" href="#delivery">Доставка</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link go_to" href="#warranty">Гарантия</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" id="navbarDropdownMob" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Другое</a>
 
-
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMob">
+        <a class="dropdown-item" href="#">Порядок заказа</a>
+        <a class="dropdown-item" href="#">Гарантии</a>
+        <a class="dropdown-item" href="#">Доставка</a>
+        <a class="dropdown-item" href="#">Оферта</a>
+        <a class="dropdown-item" href="#">Правила оплаты и возврата товара</a>
+        <a class="dropdown-item" href="#">Пользовательское соглашение</a>
+        <a class="dropdown-item" href="#">Политика конфиденциальности</a>
+      </div>
+    </li>
+  </ul>
 </div>
 
 <header>
@@ -56,14 +82,23 @@
             <li class="nav-item">
               <a class="nav-link go_to" href="#warranty">Гарантия</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link go_to" href="#other">Другое</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Другое</a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Порядок заказа</a>
+                <a class="dropdown-item" href="#">Гарантии</a>
+                <a class="dropdown-item" href="#">Доставка</a>
+                <a class="dropdown-item" href="#">Оферта</a>
+                <a class="dropdown-item" href="#">Правила оплаты и возврата товара</a>
+                <a class="dropdown-item" href="#">Пользовательское соглашение</a>
+                <a class="dropdown-item" href="#">Политика конфиденциальности</a>
+              </div>
             </li>
           </ul>
         </nav>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-text">Меню</span>
           <span class="navbar-toggler-icon">
             <span></span>
@@ -85,7 +120,7 @@
         <div class="main-img"><img src="img/img1.png" alt=""></div>
       </div>
 
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 d-none d-md-block">
         <div class="main-content">
           <div class="subtitle-text">
             «вытяжка головченко»
@@ -214,6 +249,54 @@
 
       <div class="col-12">
         <div class="technology-slider-nav"></div>
+      </div>
+
+      <div class="col-12 d-flex flex-wrap">
+          <div class="list-technology">
+            <div class="list-technology__line">
+              <div class="list-technology-num">1</div>
+              <p>защита при работе с клиентом</p>
+            </div>
+            <div class="list-technology__line">
+              <div class="list-technology-num">2</div>
+              <p>особая форма корпуса
+                подавляющая звук</p>
+            </div>
+            <div class="list-technology__line">
+              <div class="list-technology-num">3</div>
+              <p>два режима работы </p>
+            </div>
+            <div class="list-technology__line">
+              <div class="list-technology-num">4</div>
+              <p>защита при наклоне в
+                сторону клея  </p>
+            </div>
+          </div>
+
+        <div class="list-technology">
+          <div class="list-technology__line">
+            <div class="list-technology-num">5</div>
+            <p>оптимальная мощность для
+              нормальной работы клея</p>
+          </div>
+          <div class="list-technology__line">
+            <div class="list-technology-num">6</div>
+            <p>бесщеточные моторы для
+              длительной работы</p>
+          </div>
+          <div class="list-technology__line">
+            <div class="list-technology-num">7</div>
+            <p>спойлеры для защиты
+              клиента от воздушных
+              потоков </p>
+          </div>
+          <div class="list-technology__line">
+            <div class="list-technology-num">8</div>
+            <p>спойлеры для защиты
+              клиента от воздушных
+              потоков </p>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -352,7 +435,7 @@
         <div class="buy-img"><img src="img/product1.png" alt=""></div>
       </div>
 
-      <div class="col-6 col-md-5 col-lg-4">
+      <div class="col-7 col-md-5 col-lg-4">
         <div class="buy-box">
           <h3>В комплект входят:</h3>
           <ul class="list-checkbox">
@@ -368,14 +451,14 @@
           <div class="warranty" id="warranty">Гарантия на 1 год*</div>
 
           <button type="button" data-toggle="modal" data-target="#modal__order" class="btn btn-accent">Заказать</button>
-          <div class="delivery">Доставка по России <strong>от 350р</strong>. 3-7 дней*</div>
+          <div class="delivery" id="delivery">Доставка по России <strong>от 350р</strong>. 3-7 дней*</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="reviews">
+<section class="reviews" id="reviews">
   <div class="container">
 
     <div class="row">
@@ -399,9 +482,16 @@
 
         </a>
 
-        <div class="video-box-description">
-          <h3>Анна Иванна Аванесян</h3>
-          <p>Супер мастер по всякой всячине</p>
+        <div class="line-wrapper">
+          <div class="video-box-description">
+            <h3>Анна Иванна Аванесян</h3>
+            <p>Супер мастер по всякой всячине</p>
+          </div>
+
+          <div class="d-block d-md-none">
+            <a href="#" class="color-grey load-more">еще 16 отзывов</a>
+            <a href="#" class="links-reviews">Смотреть еще отзывы</a>
+          </div>
         </div>
       </div>
       <div class="col-12 col-md-4 d-none d-md-block">
@@ -437,10 +527,7 @@
         <a href="#" class="links-reviews">Смотреть еще отзывы</a>
       </div>
 
-      <div class="col-12 d-block d-md-none">
-        <a href="#" class="color-grey load-more">еще 16 отзывов</a>
-        <a href="#" class="links-reviews">Смотреть еще отзывы</a>
-      </div>
+
     </div>
   </div>
 </section>
@@ -540,7 +627,7 @@
                     <input type="text" name="mail">
                   </label>
                 </div>
-                <div class="form-col">
+                <div class="form-col form-col-last">
                   <label class="label-form">
                     <span class="input-placeholder">Ваш вопрос:<sub class="color-accent">*</sub></span>
                     <textarea name="message" required></textarea>
@@ -575,6 +662,7 @@
   </div>
 </footer>
 
+<div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>

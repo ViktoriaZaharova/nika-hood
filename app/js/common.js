@@ -35,3 +35,14 @@ $('.technology-slider').slick({
     nextArrow: '<button type="button" class="slick-next">Задняя сторона</button>',
     fade: true
 });
+
+// mobile menu
+$('.navbar-toggler').on('click', function () {
+   $('.overlay').fadeIn();
+   $('.mobile-menu').fadeIn();
+});
+
+$('.btn-close').on('click', function () {
+    $('.mobile-menu').fadeOut();
+    $('.overlay').fadeOut();
+});
