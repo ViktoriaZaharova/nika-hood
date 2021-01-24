@@ -135,6 +135,10 @@ textarea
 
 .label-form-input
   .input-placeholder
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-start
     top: 50%
     transform: translate(0,-50%)
 
@@ -1170,6 +1174,324 @@ footer
   display: none
 
 .mb-35
+  margin: 0 0 35px
+
+//modal
+.modal-dialog
+  max-width: 800px
+  border-radius: 0
+
+.modal-header
+  background: #ededed
+  padding: 12px 30px
+  display: flex
+  align-items: center
+  .close
+    margin: 0 0 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0
+    color: #24262a
+    font-size: 16px
+    font-weight: normal
+    opacity: 1
+    text-shadow: none
+
+.close
+  margin: 0 0 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 0
+  color: #24262a
+  font-size: 16px
+  font-weight: normal
+  opacity: 1
+  text-shadow: none
+
+.close-icon
+  margin: 0 0 0 12px
+  width: 15px
+  height: 15px
+  position: relative
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 7px
+    background: $accent
+    width: 1px
+    height: 100%
+    top: 0
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+.modal-title
+  line-height: normal
+  color: #7f8792
+  font-size: 22px
+  font-weight: bold
+
+.modal-content
+  border: none
+  border-radius: 0
+  background: #f9f9f9
+  box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.09)
+
+.modal-footer
+  padding: 15px 30px
+  background-color: #ededed
+  border: none
+
+.modal-body
+  padding: 0
+  
+.card
+  padding: 0
+  border: none
+    top: 1px solid #7f8792
+  border-radius: 0
+  &:first-child
+    border: none
+
+.card-header
+  border: none
+  background: transparent
+  padding: 21px 30px 25px
+  .btn
+    margin: 0
+    padding: 0
+    border-radius: 0
+    color: #24262a
+    font-size: 22px
+    font-weight: bold
+    text-decoration: none
+    &:hover, &:focus
+      text-decoration: none
+
+.card-body
+  padding: 0 30px 25px
+  color: #5d5f65
+  font-size: 14px
+
+.collapse-line
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 0 40px
+  &:last-child
+    margin: 0
+  h4
+    font-weight: bold
+    font-size: 16px
+    color: $text
+
+.amount
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 110px
+  border-radius: 15px
+  border: solid 1px #7f8792
+  overflow: hidden
+  span
+    height: 30px
+    width: 32px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: .3s ease
+    position: relative
+    background: #7f8792
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      width: 19px
+      height: 2px
+      background: #bcc4ce
+      transform: translate(-50%,-50%)
+  input
+    height: 30px
+    width: calc(100% - 64px)
+    text-align: center
+    color: #7f8792
+    font-size: 18px
+    font-weight: bold
+    background: #fff
+    border-radius: 0
+    padding: 0
+  .up
+    &:after
+      content: ''
+      position: absolute
+      width: 2px
+      height: 19px
+      background: #bcc4ce
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+
+.form-collapse
+  input
+    background: #ededed
+  .collapse-line
+    margin: 0 0 14px
+    button
+      margin: 0 auto 0 23px
+      height: 35px
+      border-radius: 17.5px
+    .label-form
+      margin: 0
+      &:first-child
+        width: 38%
+      &:nth-child(2)
+        width: 32%
+      &:last-child
+        width: 28%
+    .label-form-phone:first-child
+      width: 300px
+    input
+      padding: 0 12px 0 9px
+
+.btn-step
+  width: fit-content
+  margin: 0 0 0 auto
+
+.btn-grey
+  background: #bfbfbf
+  color: #7f8792
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn:disabled
+  background: #7f8792
+  border: solid 1px #7f8792
+  opacity: 1
+  color: #b7bfc9
+  &:hover
+    background: $accent
+    color: #fff
+
+.radio
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  align-items: flex-start
+  justify-content: flex-start
+  color: $text
+  padding: 0 0 0 24px
+
+.label-text
+  width: 100%
+
+
+.radio-inp
+  display: none
+
+.label-title
+  font-size: 16px
+  font-weight: bold
+
+.radio-custom
+  width: 16px
+  height: 16px
+  min-width: 16px
+  margin: 0 17px 0 0
+  position: absolute
+  left: 0
+  top: -3px
+  border: 1px solid $text
+    radius: 50%
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    transition: .3s ease
+    border-radius: 50%
+    width: 8px
+    height: 8px
+
+.radio-inp:checked ~ .radio-custom
+  &:before
+    background: $accent
+
+.sum-delivery
+  margin: 0 0 0 auto
+  font-size: 16px
+  font-weight: bold
+  color: $text
+
+.list-radio
+  width: 100%
+  margin: 0 0 33px
+  li
+    width: 100%
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+.links-doc
+  display: inline
+  color: #24262a
+  text-decoration: underline
+
+.order-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  h4
+    font-weight: bold
+    font-size: 16px
+    margin: 0 0 15px
+    color: $text
+
+.color-accent
+  color: $accent
+
+.links-edit
+  text-decoration: underline
+
+.order-product-val
+  font-size: 16px
+  color: $text
+  margin: 15px 0 0
+  strong
+    font-size: 18px
+
+.order-img
+  width: 339px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.order-info
+  width: calc(100% - 339px)
+  padding: 0 0 0 16px
+
+.delivery-box
+  margin: 27px 0 31px
+  padding: 19px 40px 16px 14px
+  h4
+    font-size: 16px
+    color: $text
+    margin: 0 0 20px
+    font-weight: bold
+
+.consent
+  width: 100%
   margin: 0 0 35px
 
 @import "media"

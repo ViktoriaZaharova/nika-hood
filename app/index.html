@@ -516,8 +516,8 @@
           </div>
 
           <div class="d-block d-md-none reviews-item-info">
-              <a href="#" class="color-grey load-more">еще 16 отзывов</a>
-              <a href="#" class="links-reviews">Смотреть еще отзывы</a>
+            <a href="#" class="color-grey load-more">еще 16 отзывов</a>
+            <a href="#" class="links-reviews">Смотреть еще отзывы</a>
           </div>
         </div>
       </div>
@@ -688,6 +688,213 @@
     </div>
   </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modal__order" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Заказ в 4 шага</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="close-text">Закрыть</span>
+          <span aria-hidden="true" class="close-icon"></span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="accordion form-order" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                  1. Корзина заказа
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="collapse-line">
+                  <p>Какое количество вытяжек вы хотите заказать?</p>
+                  <div class="amount">
+                    <span class="down"></span>
+                    <input type="text" value="20"/>
+                    <span class="up"></span>
+                  </div>
+                </div>
+
+                <div class="collapse-line">
+                  <h4>Цена (без учета доставки): 4750 руб.</h4>
+
+                  <a href="#" class="btn btn-accent btn-step">Шаг 2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                  2. Данные покупателя
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="form-collapse">
+                  <div class="collapse-line">
+                    <label class="label-form label-form-phone label-form-input">
+                      <span class="input-placeholder">Телефон в формате: 89229999999<sub
+                          class="color-accent">*</sub></span>
+                      <input type="text" name="phone" required>
+                    </label>
+
+                    <button type="button" class="btn btn-accent" disabled>Отправить код</button>
+                  </div>
+
+                  <div class="collapse-line">
+                    <label class="label-form label-form-input">
+                      <span class="input-placeholder">Фамилия Имя Отчество<sub
+                          class="color-accent">*</sub></span>
+                      <input type="text" name="name" required>
+                    </label>
+                    <label class="label-form label-form-input ">
+                      <span class="input-placeholder">Город<sub
+                          class="color-accent">*</sub></span>
+                      <input type="text" name="city" required>
+                    </label>
+
+                    <label class="label-form label-form-input">
+                      <span class="input-placeholder">Индекс<sub
+                          class="color-accent">*</sub></span>
+                      <input type="text" name="city" required>
+                    </label>
+                  </div>
+
+                  <div class="collapse-line">
+                    <label class="label-form label-form-input">
+                      <span class="input-placeholder">Улица<sub
+                          class="color-accent">*</sub></span>
+                      <input type="text" name="street" required>
+                    </label>
+                    <label class="label-form label-form-input">
+                      <span class="input-placeholder">Дом/корпус<sub
+                          class="color-accent">*</sub></span>
+                      <input type="text" name="house" required>
+                    </label>
+
+                    <label class="label-form label-form-input">
+                      <span class="input-placeholder">Квартира<sup
+                          class="color-accent">*</sup></span>
+                      <input type="text" name="apartment" required>
+                    </label>
+                  </div>
+                </div>
+
+                <a href="#" class="btn btn-grey btn-step">Шаг 3</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                  3. Данные покупателя
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul class="list-radio">
+                  <li>
+                    <label class="radio">
+                      <input class="radio-inp" type="radio" name="radio">
+                      <span class="radio-custom"></span>
+                      <span class="label-title">Доставка до двери</span>
+                      <span class="label-text">Стоимость доставки расчитывается..</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input class="radio-inp" type="radio" name="radio" checked>
+                      <span class="radio-custom"></span>
+                      <span class="label-title">Доставка до пункта выдачи</span>
+                      <span class="sum-delivery">325 руб.</span>
+                    </label>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-grey btn-step">Шаг 4</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                  4. Подтверждение заказа
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="order-wrapper">
+                  <div class="order-img"><img src="img/product-modal.png" alt=""></div>
+                  <div class="order-info">
+                    <h4>"Вытяжка Головченко" для наращивания ресниц</h4>
+
+                    <p>Комплектация: вытяжка , пантограф, струбцина, адаптер 12V, инструкция,
+                      упаковка</p>
+
+                    <div class="order-product-val">
+                      Количество: <strong>1 шт.</strong>
+                    </div>
+                    <a href="#" class="color-accent links-edit">изменить</a>
+
+                    <div class="order-product-val">
+                      К оплате: <strong>4750 руб.</strong>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="delivery-box">
+                  <h4>Доставка</h4>
+                  <div class="box-text">
+                    <p>Доставка оплачивается при получении заказа.</p>
+
+                    <p>Перед отправкой заказа с Вами свяжется менеджер для подтверждения адреса.</p>
+
+                    <p>Пожалуйста, сохраните номер заказа, который будет отправлен на Ваш телефон.</p>
+                  </div>
+                </div>
+
+                <label class="radio consent">
+                  <input class="radio-inp" type="radio" name="consent" checked>
+                  <span class="radio-custom"></span>
+                  <span class="label-text">Я согласен с <a href="#" class="links-doc">обработкой моих персональных данных</a> и с <a
+                      href="#" class="links-doc">Офертой.</a></span>
+                </label>
+                <a href="#" class="btn btn-accent btn-step">Перейти к оплате</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="close-text">Закрыть</span>
+          <span aria-hidden="true" class="close-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="overlay"></div>
 
