@@ -350,7 +350,8 @@ main {
   padding: 106px 0 0;
   background: url("../img/bg-main.jpg") no-repeat center;
     background-size: cover;
-  position: relative; }
+  position: relative;
+  margin: 0 0 13px; }
   main:after {
     content: '';
     position: absolute;
