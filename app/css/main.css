@@ -764,9 +764,6 @@ main {
     height: 9px;
     opacity: 1; }
 
-.slick-disabled {
-  display: none; }
-
 .slick-next {
   margin: 0 0 0 auto; }
   .slick-next:before {
@@ -776,6 +773,9 @@ main {
     margin: 0 0 0 12px;
     background: url("../img/right.svg") no-repeat center;
       background-size: 100%; }
+
+.slick-disabled {
+  opacity: 0; }
 
 .advantages {
   padding: 66px 0; }
