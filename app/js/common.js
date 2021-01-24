@@ -26,3 +26,12 @@ $("input,textarea").focus(function () {
         $(this).parent().removeClass("focus");
     }
 });
+
+$('.technology-slider').slick({
+    slidesToShow: 1,
+    infinite: false,
+    appendArrows: '.technology-slider-nav',
+    prevArrow: '<button type="button" class="slick-prev">Передняя сторона</button>',
+    nextArrow: '<button type="button" class="slick-next">Задняя сторона</button>',
+    fade: true
+});
