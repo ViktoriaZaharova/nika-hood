@@ -387,7 +387,7 @@ main {
 
 .main-img {
   margin: 0 0 0 -90px;
-  min-width: 1044px;
+  min-width: 944px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1169,6 +1169,8 @@ footer {
 
 .footer-top {
   padding: 29px 0 42px; }
+  .footer-top .btn {
+    margin: auto 0; }
 
 .footer-box a {
   color: #fff; }
@@ -1342,7 +1344,8 @@ footer {
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  cursor: pointer; }
 
 .btn-close-icon {
   width: 15px;
@@ -1865,7 +1868,9 @@ footer {
     .description-text8:after {
       top: -10px; }
   .technology-slider-nav {
-    margin: 0 0 26px; } }
+    margin: 0 0 26px; }
+  .main-img {
+    min-width: 900px; } }
 
 @media only screen and (max-width: 1300px) {
   textarea {
@@ -1880,7 +1885,7 @@ footer {
 @media only screen and (max-width: 1200px) {
   .main-img {
     margin: 0 0 0 -60px;
-    min-width: 900px; }
+    min-width: 800px; }
   .nav-item {
     margin: 0 20px 0 0; }
   h1, .about h2 {
@@ -1911,6 +1916,10 @@ footer {
     max-width: 160px; }
   .footer-box-document {
     padding: 0 25px; } }
+
+@media only screen and (max-width: 1100px) {
+  .main-img {
+    min-width: 700px; } }
 
 @media only screen and (max-width: 992px) {
   header {
@@ -2096,13 +2105,15 @@ footer {
   .technology-slider__box {
     padding: 0; }
   .list-technology {
-    display: block; } }
+    display: block; }
+  .main-img {
+    min-width: 600px; } }
 
 @media only screen and (max-width: 768px) {
   main:after {
     display: none; }
   .main-img {
-    min-width: 1040px;
+    min-width: 900px;
     margin: 0; }
   main {
     padding: 90px 0 0;
@@ -2171,7 +2182,9 @@ footer {
   .reviews {
     padding: 45px 0; }
     .reviews .box-title {
-      margin: 0 0 36px; } }
+      margin: 0 0 36px; }
+  .technology-slider {
+    margin: -10px auto 0; } }
 
 @media only screen and (max-width: 670px) {
   .buy h2 {
@@ -2350,7 +2363,9 @@ footer {
   .modal-header {
     padding: 12px 20px; }
   .modal-footer {
-    padding: 15px 20px; } }
+    padding: 15px 20px; }
+  h1, .about h2 {
+    font-size: 160px; } }
 
 @media only screen and (max-width: 480px) {
   .technology-slider__box-two, .technology-slider__box-one {
@@ -2374,8 +2389,6 @@ footer {
   .num5 {
     bottom: 30px;
     right: 100px; }
-  .technology-slider {
-    margin: -20px auto 0; }
   h2 {
     font-size: 40px; }
   .buy h2 {

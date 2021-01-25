@@ -42,7 +42,7 @@ $('.navbar-toggler').on('click', function () {
    $('.mobile-menu').fadeIn();
 });
 
-$('.btn-close').on('click', function () {
+$('.btn-close, .overlay').on('click', function () {
     $('.mobile-menu').fadeOut();
     $('.overlay').fadeOut();
 });
